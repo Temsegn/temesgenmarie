@@ -17,37 +17,32 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col items-start md:items-end gap-4">
-          <div className="flex items-center gap-3">
-            <a
-              href={`mailto:${siteConfig.email}`}
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
-              aria-label="Email"
-            >
-              <Mail className="h-4 w-4" />
-            </a>
-            <a
-              href={siteConfig.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
-              aria-label="GitHub"
-            >
-              <Github className="h-4 w-4" />
-            </a>
-            <a
-              href={siteConfig.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin className="h-4 w-4" />
-            </a>
-          </div>
-          <p className="font-mono text-[11px] text-foreground-muted">
-            Built with Next.js
-          </p>
+        <div className="flex items-center gap-3">
+          <a
+            href={`mailto:${siteConfig.email}`}
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
+            aria-label="Email"
+          >
+            <Mail className="h-4 w-4" />
+          </a>
+          <a
+            href={siteConfig.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
+            aria-label="GitHub"
+          >
+            <Github className="h-4 w-4" />
+          </a>
+          <a
+            href={siteConfig.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-foreground-muted hover:text-accent hover:border-accent/40 transition-colors"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="h-4 w-4" />
+          </a>
         </div>
       </div>
     </footer>
