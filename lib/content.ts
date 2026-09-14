@@ -43,7 +43,7 @@ export const about = {
     "How I work: system design, database design, architecture, and domain engineering — with APIs built to stay reliable under load.",
   ],
   highlights: [
-    { label: "Focus", value: "Backend systems & real-time platforms" },
+    { label: "Focus", value: "Backend systems & real-time platforms · SaaS · Fintech" },
     { label: "Education", value: "B.Sc. CS · GPA 3.78/4.0" },
     { label: "Languages", value: "English · Amharic (fluent)" },
     {
@@ -129,7 +129,7 @@ export const featuredProjects: FeaturedProject[] = [
       "Docker",
     ],
     description:
-      "Ethiopia-focused SaaS connecting students, teachers, freelancers, and civil servants through learning, service delivery, and a Learn → Do Task → Earn workflow.",
+      "Ethiopia-focused SaaS connecting students, teachers, freelancers, and civil servants through learning, service delivery, and a Learn ",
     highlights: [
       "Modular NestJS monolith with transactional consistency and role-based authorization across student, teacher, freelancer, and admin workflows.",
       "Community structures by school, woreda, zone, and region; service booking and 1:1/1:M learning sessions; wallet and escrow-ready payment infrastructure.",
@@ -300,3 +300,4 @@ export const contact = {
   subtext:
     "Open to full-time roles, contract work, and systems that need careful backend engineering.",
 }
+
