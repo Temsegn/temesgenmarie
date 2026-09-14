@@ -16,8 +16,8 @@ export default function About() {
           />
         </FadeIn>
 
-        <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 items-start">
-          <FadeIn delay={0.08} className="space-y-5">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-10 items-stretch">
+          <FadeIn delay={0.08} className="flex h-full flex-col justify-center space-y-5">
             {about.bio.map((paragraph) => (
               <p
                 key={paragraph.slice(0, 32)}
@@ -32,26 +32,26 @@ export default function About() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.14}>
-            <div className="rounded-card border border-border bg-background-elevated overflow-hidden">
-              <div className="relative aspect-[4/3] border-b border-border bg-[#0d0d0f]">
+          <FadeIn delay={0.14} className="h-full">
+            <div className="flex h-full flex-col rounded-card border border-border bg-background-elevated overflow-hidden">
+              <div className="relative min-h-[280px] flex-1 border-b border-border bg-[#0d0d0f]">
                 <Image
                   src="/images/temesgen-profile.jpg"
                   alt="Temesgen Marie"
                   fill
                   className="object-cover object-top grayscale contrast-110 opacity-90"
-                  sizes="(max-width: 1024px) 100vw, 420px"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   priority={false}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background-elevated via-transparent to-transparent" />
                 <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent_40%,rgba(201,167,104,0.12)_100%)] mix-blend-overlay" />
               </div>
 
-              <dl className="divide-y divide-border">
+              <dl className="divide-y divide-border shrink-0">
                 {about.highlights.map((item) => (
                   <div
                     key={item.label}
-                    className="grid grid-cols-[110px_1fr] gap-3 px-5 py-4"
+                    className="grid grid-cols-[110px_1fr] gap-3 px-5 py-3.5"
                   >
                     <dt className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent pt-0.5">
                       {item.label}
