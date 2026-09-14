@@ -199,6 +199,14 @@ export type AdditionalProject = {
 
 export const additionalProjects: AdditionalProject[] = [
   {
+    name: "MAS Gebeya",
+    tag: "Full-Stack",
+    stack: ["Next.js", "React", "MongoDB", "Node.js"],
+    description:
+      "Ethiopian marketplace for vehicles, properties, land, and machines — listings, dealer chat, and deal workflows.",
+    href: "https://mas-gebeya.vercel.app/",
+  },
+  {
     name: "CRM Platform",
     tag: "Full-Stack",
     stack: ["NestJS", "PostgreSQL", "React", "Next.js"],
@@ -226,6 +234,7 @@ export const additionalProjects: AdditionalProject[] = [
     stack: ["Next.js", "NestJS", "PostgreSQL", "WordPress"],
     description:
       "GDPR/CCPA-oriented consent management SaaS with banner builder, site scanning, and audit logs.",
+    href: "https://cookiescmp.vercel.app/",
   },
 ]
 
