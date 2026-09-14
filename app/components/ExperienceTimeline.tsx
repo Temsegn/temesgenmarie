@@ -16,7 +16,7 @@ export default function ExperienceTimeline() {
           />
         </FadeIn>
 
-        <ol className="relative space-y-0">
+        <ol className="relative space-y-4 md:space-y-5">
           <div
             className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-accent via-border to-border md:left-[11px]"
             aria-hidden
@@ -24,10 +24,10 @@ export default function ExperienceTimeline() {
 
           {experience.map((item, index) => (
             <FadeIn key={`${item.company}-${item.role}`} delay={index * 0.05} as="li">
-              <article className="relative grid grid-cols-[24px_1fr] md:grid-cols-[32px_1fr] gap-3 md:gap-4 pb-6 md:pb-8 last:pb-0">
+              <article className="relative grid grid-cols-[24px_1fr] md:grid-cols-[32px_1fr] gap-3 md:gap-4">
                 <div className="relative flex justify-center pt-4">
                   <span
-                    className={`h-3 w-3 rounded-full border-2 ${
+                    className={`mt-1 h-3 w-3 rounded-full border-2 ${
                       item.current
                         ? "border-success bg-success/30"
                         : "border-accent bg-background"
