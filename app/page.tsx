@@ -1,26 +1,25 @@
-import Navigation from "./components/Navigation"
+import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import About from "./components/About"
-import Projects from "./components/Projects"
-import TechStack from "./components/TechStack"
-import Achievements from "./components/Achievements"
+import ExperienceTimeline from "./components/ExperienceTimeline"
+import ProjectsGrid from "./components/ProjectsGrid"
+import SkillsGrid from "./components/SkillsGrid"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import ThemeProvider from "./components/ThemeProvider"
 
 export default function Page() {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-        <Navigation />
+    <div className="min-h-screen bg-background text-foreground">
+      <Nav />
+      <main>
         <Hero />
         <About />
-        <Projects />
-        <TechStack />
-        <Achievements />
+        <ExperienceTimeline />
+        <ProjectsGrid />
+        <SkillsGrid />
         <Contact />
-        <Footer />
-      </div>
-    </ThemeProvider>
+      </main>
+      <Footer />
+    </div>
   )
 }
