@@ -24,7 +24,7 @@ export default function ExperienceTimeline() {
 
           {experience.map((item, index) => (
             <FadeIn key={`${item.company}-${item.role}`} delay={index * 0.05} as="li">
-              <article className="relative grid grid-cols-[24px_1fr] md:grid-cols-[32px_1fr] gap-3 md:gap-4 pb-4 last:pb-0">
+              <article className="relative grid grid-cols-[24px_1fr] md:grid-cols-[32px_1fr] gap-3 md:gap-4 pb-6 md:pb-8 last:pb-0">
                 <div className="relative flex justify-center pt-4">
                   <span
                     className={`h-3 w-3 rounded-full border-2 ${
