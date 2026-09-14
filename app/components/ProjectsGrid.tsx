@@ -13,7 +13,7 @@ export default function ProjectsGrid() {
         <FadeIn>
           <SectionHeading
             eyebrow="Projects"
-            title="Production systems with real engineering constraints."
+            title="Systems with real engineering constraints."
             description="SaaS platforms, fintech-style payments, and real-time infrastructure — built for correctness, auth, and scale."
           />
         </FadeIn>
